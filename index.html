@@ -1,0 +1,96 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Alumni Registration </title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  
+
+</head>
+ 
+<body>
+    <header class="container">
+        <div class="row ml-3">
+            <div class="col-sm-6">
+                <img style="width:100%; float:left ;height:80%" src="images/logo.png">
+            </div>
+            <div class="col-sm-6">
+                <img  style="width:60%; float:right; height:60%" src="images/20years5.jpg">
+            </div>
+        </div>
+    </header>>
+  <div class="row">
+  <section class="section">
+    
+    <header>
+      <h3>ALUMNI ASSOCIATION</h3><br/><br>
+      <h3>Registration</h3>
+    </header>
+    <main>
+     
+        <div class="form-item box-item">
+          <input type="text" id="name" class="tx1" placeholder="Name" data-required>
+          <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
+        </div>
+        <div class="form-item box-item">
+          <input type="email" id="email" class="tx1" placeholder="Email" data-email data-required>
+          <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
+          <small class="errorEmail"><i class="fa fa-asterisk" aria-hidden="true"></i> email is not valid</small>
+        </div>
+        <div class="form-item box-item">
+          <input type="text" id="batch" placeholder="Batch" data-required>
+          <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
+        </div>
+        <div class="form-item-double box-item"> 
+          <div class="form-item">
+            <input type="text" id="Jobtitle" placeholder="Job Title" data-required data-number>
+            <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
+          </div>
+        </div>
+        <div class="form-item-double box-item"> 
+          <div class="form-item">
+            <input type="text" id="organization" placeholder="organization" data-required data-number>
+            <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
+          </div>
+          </div>
+        <div class="form-item box-item">
+          <input type="text" id="phone" placeholder="Phone" data-required data-number data-count="10">
+          <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
+          <small class="errorNum"><i class="fa fa-asterisk" aria-hidden="true"></i> must be a number</small>
+          <small class="errorChar"><i class="fa fa-asterisk" aria-hidden="true"></i> must be 10 digits</small>
+        </div>
+        <div class="col-sm-4">
+            <div class="row mt-3">
+                <div class="col-sm-12 text-center">
+                    <img id="myimg">
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-sm-12 text-center">
+                    <button class="b1" id="select">Upload Your Picture</button>
+                </div>
+            </div>
+        </div>
+        <center>
+        <div class="form-item">
+          <button class="b2" id="register">Register</button>
+        </div>
+      </center>
+    </main>
+    <i class="wave"></i>
+  </section>
+</div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+  
+<!-- <script  src="main.js"></script> -->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-storage.js"></script>
+ 
+<script  src="firebase.js"></script>
+ 
+</body>
+ 
+</html>
