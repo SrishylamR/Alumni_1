@@ -4,7 +4,7 @@ html {
   }
   body{
       background-color: #18181ade;
-  }
+   }
    
   *, *:before, *:after {
     margin: 0;
@@ -27,12 +27,13 @@ html {
   }
    
   .section {
-    background-color: #0e0d0dc0;
+    background: linear-gradient(#67678589, #0202e012);
     position: relative;
     overflow: hidden;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    color:white;
   }
   header, 
   main,
@@ -76,12 +77,7 @@ html {
     align-self: center;
     text-align: center;
     margin-top: 32px;
-  }
-
-  footer a:hover {
-    text-decoration: underline;
-  }
-   
+  }   
   form {
     height: 100%;
     display: flex;
@@ -179,6 +175,7 @@ html {
   .b2:hover {
     background-color: red;
     border: 2px solid black;
+   color:white;
   }
   .b1{
     display: inline-block;
@@ -195,6 +192,8 @@ html {
   .b1:hover {
     background-color: rgb(0, 255, 64);
     border: 2px solid black;
+    color:white;
+   
   }
   .wave {
     position: absolute;
@@ -234,5 +233,5 @@ img{
     width: 100%;
     padding: 20px;
     background-attachment: fixed;
-    background-color: #101011e7;
+    background: linear-gradient(#67678589, #0202e012);
 }
