@@ -20,6 +20,8 @@ function readData() {
     Jobtitle = document.getElementById("Jobtitle").value;
     organization=document.getElementById("organization").value;
     phone= document.getElementById("phone").value;
+    
+    document.getElementById('contactForm').reset();
 }
 
 let register = document.getElementById("register");
