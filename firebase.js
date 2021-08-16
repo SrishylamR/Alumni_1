@@ -12,18 +12,43 @@
   firebase.initializeApp(firebaseConfig);
 
 let studentname, phone, batch, Jobtitle, organization;
-
-function readData() {
+function validateForm(){
     studentname = document.getElementById("name").value;
     email = document.getElementById("email").value;
     batch = document.getElementById("batch").value;
     Jobtitle = document.getElementById("Jobtitle").value;
     organization=document.getElementById("organization").value;
     phone= document.getElementById("phone").value;
-    
-    document.getElementById('contactForm').reset();
-}
 
+    if (studentname==null || studentname==""){  
+        // if(email==null){
+        //     alert("Email can't be blank");  
+        //     return false;
+        // }
+        alert("Name can't be blank");  
+        return false;  
+    }
+    else if(email==null){  
+        alert("Email can't be blank");  
+        return false;  
+        }  
+        else if(batch==null){
+            alert("batch can't be blank");  
+            return false; 
+        }
+        else if(Jobtitle==null){
+            alert("Jobtitle can't be blank");  
+            return false; 
+        }
+        else if(organization==null){
+            alert("organization can't be blank");  
+            return false; 
+        }
+        else if(phone==null || phone.length<=10){
+            alert("phone can't be blank");  
+            return false; 
+        }
+      }
 let register = document.getElementById("register");
 //Image uploading to firestore
 var reader;
@@ -47,7 +72,7 @@ document.getElementById("select").onclick = function (e) {
 //inserting data into firebase real time database
 
 register.addEventListener("click", () => {
-    readData();
+    validateForm();
     imgName = phone;
     let dbRef = firebase.database().ref().child("Alumni");
     var uploadImg = firebase.storage().ref('images/' + imgName + ".png");
